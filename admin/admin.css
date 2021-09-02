@@ -1,0 +1,273 @@
+:root {
+    --primary: #d6d5d2;
+    --secondary: #6d4b77e3;
+    --bgColor: #eeeeee;
+    --textColor: white;
+    --headingColor: #001b2e;
+    --linkColor: rgb(60, 14, 226);
+    --hoverColor: #20272c;
+    --button: #12a2bb;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    background: var(--bgColor);
+}
+
+main {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.nav-wrap {
+    position: relative;
+    min-height: 650px;
+    background: gray;
+    padding-left: 25px;
+    padding-top: 40px;
+    transition: all 0.5s;
+}
+
+.logo_container {
+    padding: 0 5px 15px;
+}
+
+.nav-wrap li {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.nav-wrap li button {
+    position: relative;
+    display: flex;
+    width: 100%;
+    color: white;
+    border: none;
+    background: none;
+}
+
+.nav-wrap li .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.nav-wrap li .icon i {
+    font-size: 1.5rem;
+}
+
+.nav-wrap li button .title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    white-space: normal;
+}
+
+.nav-wrap li.active {
+    background: var(--bgColor);
+}
+
+.nav-wrap li.active button {
+    color: black;
+}
+
+.notify {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    line-height: 5px;
+}
+
+.notify_ct {
+    background: red;
+    font-size: 15px;
+    border-radius: 300px;
+    padding: 2px;
+}
+
+.content-wrap {
+    width: 1114px;
+    position: relative;
+}
+
+.content-div {
+    width: inherit;
+    min-height: fit-content;
+    display: none;
+    margin: 20px auto;
+}
+
+.content-div #form {
+    padding: 25px;
+    box-shadow: 5px 3px 5px gray;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    background: gray;
+}
+
+#form .btn {
+    display: block;
+}
+
+#form button {
+    padding: 10px;
+    background: var(--button);
+    width: 200px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+#form button:first-of-type {
+    margin-bottom: 3px;
+}
+
+#form button:hover {
+    background-color: var(--hoverColor);
+    color: var(--primary);
+}
+
+input[type="text"],
+input[type="number"],
+#select_category {
+    width: 450px;
+    padding: 8px;
+    text-align: left;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+#select_category:focus {
+    border: 3px solid var(--button);
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.quote {
+    display: flex;
+}
+
+textarea {
+    width: 450px;
+    height: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+#request_table {
+    border-collapse: collapse;
+    border: none;
+    width: 700px;
+    margin: auto;
+}
+
+#request_table td {
+    text-align: center;
+    padding: 20px;
+}
+
+#t_head th {
+    padding: 20px;
+}
+
+#request_table tr:first-of-type {
+    background-color: rgb(137, 206, 206);
+}
+
+#request_table tr:not(:first-of-type):nth-child(2n) {
+    background-color: #7e7d7a;
+}
+
+#request_table tr:not(:first-of-type):nth-child(2n-1) {
+    background-color: #d6d5d2;
+}
+
+.content_head {
+    padding: 10px;
+    width: 1114px;
+    min-height: 75px;
+    background: rgb(206, 206, 206);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content_head p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.home section {
+    margin: 25px 0 25px 25px;
+    width: 300px;
+}
+
+.home li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.home header {
+    font-weight: bold;
+    margin: 20px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-size: 36px;
+}
+
+.home_sections {
+    display: flex;
+    width: 100%;
+}
+
+.home_sections section {
+    flex: 1;
+    background: var(--primary);
+    height: 150px;
+    padding: 40px 25px;
+    text-align: center;
+    transition: 1s;
+}
+
+.home_sections section:hover {
+    flex: 1.5;
+    background-color: dimgray;
+}
+
+.home_sections i {
+    font-size: 50px;
+    color: white;
+}
+
+.home_sections section span {
+    padding: 10px;
+}

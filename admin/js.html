@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: block;
+            background: rgb(228, 228, 228);
+            padding: 5px;
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+        .top {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            height: 300px;
+            grid-gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .top div {
+            border: 1px solid white;
+            background: ivory;
+        }
+        
+        .top div:nth-child(2) {
+            margin-left: 10px;
+        }
+        
+        .bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            height: 300px;
+            grid-gap: 10px;
+        }
+        
+        .bottom div:nth-child(2) {
+            margin-right: 10px;
+        }
+        
+        .bottom div {
+            border: 1px solid white;
+            background: ivory;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="bottom">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
